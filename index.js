@@ -20,7 +20,7 @@ async function run() {
         const database = client.db('volunteer_list')
         const volunteerCollection = database.collection('service')
 
-        app.get('/service', async (req, res) => {
+        app.get('/services', async (req, res) => {
             const cursor = volunteerCollection.find({})
             const result = await cursor.toArray()
             res.send(result)
