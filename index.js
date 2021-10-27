@@ -34,7 +34,7 @@ async function run() {
 run().catch(console.dir)
 
 app.get('/', (req, res) => {
-    res.send('hello')
+    res.send('hello Mr Pino')
 })
 app.listen(port, () => {
     console.log('pino', port)
